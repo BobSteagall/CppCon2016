@@ -1,0 +1,9 @@
+*.bak
+code/.idea/
+code/cmake-*/
+code/vs2015/.vs/
+code/vs2015/x64/
+code/vs2015/AllocatorAwareTests.VC.db
+code/vs2015/AllocatorAwareTests.vcxproj.user
+code/vs2017/.vs/
+code/vs2017/x64/
