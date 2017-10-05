@@ -51,8 +51,8 @@ When building on linux with Clang, I just do something like this from the
 <root>/code directory:
 
     $ clang++ -stdlib=libc++ -std=c++14 -g -I./include  \
-	          src/segmented_private_storage_model.cpp   \
-			  src/demo.cpp -o /tmp/reloc_demo
+              src/segmented_private_storage_model.cpp   \
+              src/demo.cpp -o /tmp/reloc_demo
 
 For map on VS2015 SP3, allocator awareness and synthetic pointers work, but
 relocation does not.  In particular, iteration goes into an endless loop after
@@ -64,7 +64,7 @@ Going Forward:
 There's quite a bit to do:
  1. Experiment with other non-traditional allocators and synthetic pointers.
     In particular, there are a few variations on the syn_ptr theme that I'd
-	like to experiment with.
+    like to experiment with.
  2. Perform more exhaustive testing of the synthetic pointer types used by
     those allocators.
  3. Perform more exhaustive testing of the containers' allocator awareness
