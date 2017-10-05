@@ -32,13 +32,13 @@ following order:
     class template parametrized in terms of an allocation strategy type.
 
  7. demo.cpp - This source file defines six test functions that perform very
-	simple tests of the "allocator-awareness" of forward_list, list, deque,
-	vector, unordered_map, and map.  Each function:
+    simple tests of the "allocator-awareness" of forward_list, list, deque,
+    vector, unordered_map, and map.  Each function:
 	 a. adds some elements to a container;
 	 b. prints the address of container, then iterates over and prints the 
 	    elements of that container;
 	 c. swaps the primary and shadow segments in the storage model, which
-	    effiectively relocates the heap; and
+	    effectively relocates the heap; and
 	 d. again prints the address of container, then iterates over and prints
 	    its elements.
 
