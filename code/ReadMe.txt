@@ -18,15 +18,15 @@ following order:
 
  3. synthetic_pointer_interface.h - This header defines some traits types to
     provide SFINAE help with synthetic pointers.  It also includes the headers
-	that define the synthetic pointer types and their comparison operators.
+    that define the synthetic pointer types and their comparison operators.
 
  4. synthetic_typed_pointer_interface.h - This header defines a pointer 
     interface type per slides 37 and 38.  A sibling header defines a partial
-	specialization for void pointers (synthetic_void_pointer_interface.h).
+    specialization for void pointers (synthetic_void_pointer_interface.h).
 
  5. segmented_leaky_allocation_strategy.h - This header defines an allocation
     strategy type per slide 40.  This trivial allocator just grabs the next
-	available address in a segment, and deallocation is a no-op.
+    available address in a segment, and deallocation is a no-op.
 
  6. rhx_allocator.h - This header defines a standard-conformant allocator 
     class template parametrized in terms of an allocation strategy type.
